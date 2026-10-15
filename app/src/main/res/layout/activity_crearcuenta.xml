@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/login"
+    android:id="@+id/nombre"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -9,7 +9,7 @@
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/tvRecuContraseña"
+        android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crear cuenta"
@@ -57,7 +57,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/SoliciarEnlace"
+        android:id="@+id/button"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Registrarse" />
