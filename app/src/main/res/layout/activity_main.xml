@@ -5,8 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp"
+    app:barrierMargin="15dp"
     tools:context=".MainActivity">
 
     <ImageView
@@ -30,5 +32,23 @@
         android:layout_height="wrap_content"
         android:text="Tus compras compartidas, en familia."
         android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="Crear Cuenta" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="Continuar como invitado" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesion" />
 
 </LinearLayout>
