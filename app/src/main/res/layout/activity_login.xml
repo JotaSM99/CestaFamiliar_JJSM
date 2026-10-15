@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="?android:attr/colorBackground">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Logo CestaFamiliar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CestaFamiliar"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tus compras del hogar, sincronizadas al instante."
+        android:textSize="14sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btnGoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Crear cuenta" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoLogin"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Iniciar Sesion" />
+
+    <TextView
+        android:id="@+id/tvGuestMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar como invitado (modo local)"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
