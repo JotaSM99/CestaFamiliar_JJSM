@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nombre"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +9,7 @@
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/tvCrearCuenta"
+        android:id="@+id/tvIniciarSesión"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crear cuenta"
@@ -17,7 +18,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="76dp">
+        android:layout_height="76dp"
+        app:hintAnimationEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tinputNombre"
@@ -29,7 +31,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="76dp">
+        android:layout_height="76dp"
+        app:hintAnimationEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tinputEmail"
@@ -41,7 +44,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="76dp">
+        android:layout_height="76dp"
+        app:hintAnimationEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tinputContraseña"
@@ -53,7 +57,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/Registrarse"
+        android:id="@+id/Acceder"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Registrarse" />
