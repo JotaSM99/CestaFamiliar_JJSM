@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/registro"
+    android:id="@+id/nombre"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvCrearCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear cuenta"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tinputNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre:"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tinputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email:"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tinputContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña:"
+            android:inputType="textPassword"
+            android:password="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Registrarse"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Registrarse" />
 
 </LinearLayout>
