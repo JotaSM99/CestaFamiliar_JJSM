@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
+    android:background="?android:attr/colorBackground"
     android:gravity="center"
-    android:background="?android:attr/colorBackground">
+    android:orientation="vertical"
+    android:padding="24dp">
 
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@mipmap/ic_launcher"
-        android:contentDescription="Logo CestaFamiliar" />
+        android:contentDescription="Logo CestaFamiliar"
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="CestaFamiliar"
         android:textSize="28sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tus compras del hogar, sincronizadas al instante."
-        android:textSize="14sp"
-        android:textColor="?android:attr/textColorSecondary"
-        android:gravity="center"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="48dp" />
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:text="Tus compras del hogar, sincronizadas al instante."
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="14sp" />
 
     <Button
-        android:id="@+id/btnGoRegister"
+        android:id="@+id/btnCrearCuenta"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:text="Crear cuenta" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnGoLogin"
+        android:id="@+id/btnIniciarSesion"
         style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -47,12 +48,12 @@
         android:text="Iniciar Sesion" />
 
     <TextView
-        android:id="@+id/tvGuestMode"
+        android:id="@+id/tvModoInvitado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
         android:text="Entrar como invitado (modo local)"
         android:textColor="?attr/colorPrimary"
-        android:textSize="14sp"
-        android:padding="12dp"
-        android:layout_marginTop="20dp" />
+        android:textSize="14sp" />
 </LinearLayout>
