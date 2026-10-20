@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +15,8 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:contentDescription="Logo CestaFamiliar"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@android:drawable/ic_menu_today"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +40,14 @@
         android:id="@+id/btnCrearCuenta"
         android:layout_width="300dp"
         android:layout_height="56dp"
-        android:text="Crear cuenta" />
+        android:shadowColor="#009688"
+        android:text="Crear cuenta"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#009688"
+        android:textColorHint="#009688"
+        android:textColorLink="#009688"
+        app:rippleColor="#009688"
+        app:strokeColor="#009688" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnIniciarSesion"
