@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nombre"
+    android:id="@+id/layout_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="end"
@@ -10,51 +10,52 @@
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/tvTitulo"
+        android:id="@+id/tv_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar sesión"
+        android:text="@string/title_iniciar_sesion"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
         android:layout_width="match_parent"
         android:layout_height="76dp"
         app:hintAnimationEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tinputEmail"
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email:"
+            android:hint="@string/hint_email"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
         android:layout_width="match_parent"
         android:layout_height="76dp"
         app:hintAnimationEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tinputContraseña"
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña:"
-            android:inputType="textPassword"
-            android:password="true" />
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/tvRecuperarContraseña"
+        android:id="@+id/tv_recuperar_contrasena"
         android:layout_width="match_parent"
         android:layout_height="19dp"
-        android:text="¿Olvidase tú contraseña?"
+        android:text="@string/link_olvidaste_pass"
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_acceder"
         android:layout_width="300dp"
         android:layout_height="56dp"
-        android:text="Acceder" />
+        android:text="@string/btn_acceder" />
 
 </LinearLayout>

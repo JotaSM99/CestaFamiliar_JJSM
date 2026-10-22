@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/splash"
+    android:id="@+id/layout_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?android:attr/colorBackground"
@@ -11,7 +11,7 @@
     android:padding="24dp">
 
     <ImageView
-        android:id="@+id/ivLogo"
+        android:id="@+id/iv_logo"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:contentDescription="Logo CestaFamiliar"
@@ -19,6 +19,7 @@
         tools:ignore="ImageContrastCheck" />
 
     <TextView
+        android:id="@+id/tv_titulo_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -27,21 +28,22 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tv_subtitulo_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="48dp"
         android:gravity="center"
-        android:text="Tus compras del hogar, sincronizadas al instante."
+        android:text="@string/subtitle_splash"
         android:textColor="?android:attr/textColorSecondary"
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/btnCrearCuenta"
+        android:id="@+id/btn_crear_cuenta"
         android:layout_width="300dp"
         android:layout_height="56dp"
         android:shadowColor="#009688"
-        android:text="Crear cuenta"
+        android:text="@string/title_crear_cuenta"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#009688"
         android:textColorHint="#009688"
@@ -50,20 +52,20 @@
         app:strokeColor="#009688" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnIniciarSesion"
+        android:id="@+id/btn_iniciar_sesion"
         style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="300dp"
         android:layout_height="56dp"
         android:layout_marginTop="12dp"
-        android:text="Iniciar Sesion" />
+        android:text="@string/title_iniciar_sesion" />
 
     <TextView
-        android:id="@+id/tvModoInvitado"
+        android:id="@+id/tv_modo_invitado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:padding="12dp"
-        android:text="Entrar como invitado (modo local)"
+        android:text="@string/btn_invitado"
         android:textColor="?attr/colorPrimary"
         android:textSize="14sp" />
 </LinearLayout>
