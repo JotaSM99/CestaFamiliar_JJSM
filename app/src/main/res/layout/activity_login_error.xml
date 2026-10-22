@@ -4,23 +4,27 @@
     android:id="@+id/layout_login_error"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="end"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp">
 
     <TextView
         android:id="@+id/tv_titulo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
         android:text="@string/title_iniciar_sesion"
+        android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_email"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
         app:errorEnabled="true"
         app:hintAnimationEnabled="false">
 
@@ -34,8 +38,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_password"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
         app:errorContentDescription="@string/error_credenciales"
         app:errorEnabled="true"
         app:hintAnimationEnabled="false">
@@ -50,15 +56,20 @@
 
     <TextView
         android:id="@+id/tv_recuperar_contrasena"
-        android:layout_width="match_parent"
-        android:layout_height="19dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
         android:text="@string/link_olvidaste_pass"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_acceder"
         android:layout_width="300dp"
         android:layout_height="56dp"
+        android:layout_gravity="center"
         android:text="@string/btn_acceder"
         app:backgroundTint="@color/green_primary"
         app:rippleColor="@color/green_ripple" />

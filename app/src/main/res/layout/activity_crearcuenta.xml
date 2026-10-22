@@ -10,16 +10,21 @@
 
     <TextView
         android:id="@+id/tv_titulo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
         android:text="@string/title_crear_cuenta"
+        android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_nombre"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
         app:hintAnimationEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -32,8 +37,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_email"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
         app:hintAnimationEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -46,8 +53,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_password"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
         app:hintAnimationEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -62,6 +71,7 @@
         android:id="@+id/btn_registrarse"
         android:layout_width="300dp"
         android:layout_height="56dp"
+        android:layout_gravity="center"
         android:text="@string/btn_registrarse"
         app:backgroundTint="@color/green_primary"
         app:rippleColor="@color/green_ripple" />
