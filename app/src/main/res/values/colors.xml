@@ -3,7 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Green Theme Palette -->
     <color name="green_primary">#2E7D32</color>
     <color name="green_on_primary">#FFFFFF</color>
     <color name="green_primary_container">#DCEDC8</color>
