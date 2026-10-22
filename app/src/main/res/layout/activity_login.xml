@@ -52,10 +52,12 @@
         android:text="@string/link_olvidaste_pass"
         android:textAlignment="center" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_acceder"
         android:layout_width="300dp"
         android:layout_height="56dp"
-        android:text="@string/btn_acceder" />
+        android:text="@string/btn_acceder"
+        app:backgroundTint="@color/green_primary"
+        app:rippleColor="@color/green_ripple" />
 
 </LinearLayout>

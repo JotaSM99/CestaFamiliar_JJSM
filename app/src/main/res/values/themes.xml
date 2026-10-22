@@ -1,8 +1,14 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.CestaFamiliar" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Green primary theme colors -->
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorOnPrimary">@color/green_on_primary</item>
+        <item name="colorPrimaryContainer">@color/green_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/green_on_primary_container</item>
+        <item name="colorSecondary">@color/green_secondary</item>
+        <item name="colorOnSecondary">@color/green_on_secondary</item>
+        <item name="colorControlHighlight">@color/green_ripple</item>
     </style>
 
     <style name="Theme.CestaFamiliar" parent="Base.Theme.CestaFamiliar" />

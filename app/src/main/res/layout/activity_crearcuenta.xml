@@ -58,10 +58,12 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_registrarse"
         android:layout_width="300dp"
         android:layout_height="56dp"
-        android:text="@string/btn_registrarse" />
+        android:text="@string/btn_registrarse"
+        app:backgroundTint="@color/green_primary"
+        app:rippleColor="@color/green_ripple" />
 
 </LinearLayout>
