@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.JoseJavierSanchezM.cestafamiliar.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/activity_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_crearCuentaFragment"
+            app:destination="@id/crearCuentaFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/crearCuentaFragment"
+        android:name="com.JoseJavierSanchezM.cestafamiliar.CrearCuentaFragment"
+        android:label="CrearCuentaFragment"
+        tools:layout="@layout/activity_crearcuenta">
+        <action
+            android:id="@+id/action_crearCuentaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.JoseJavierSanchezM.cestafamiliar.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/activity_login">
+        <action
+            android:id="@+id/action_loginFragment_to_recuPasswordFragment"
+            app:destination="@id/recuPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginErrorFragment"
+            app:destination="@id/loginErrorFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginErrorFragment"
+        android:name="com.JoseJavierSanchezM.cestafamiliar.LoginErrorFragment"
+        android:label="LoginErrorFragment"
+        tools:layout="@layout/activity_login_error">
+        <action
+            android:id="@+id/action_loginErrorFragment_to_recuPasswordFragment"
+            app:destination="@id/recuPasswordFragment" />
+        <action
+            android:id="@+id/action_loginErrorFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recuPasswordFragment"
+        android:name="com.JoseJavierSanchezM.cestafamiliar.RecuPasswordFragment"
+        android:label="RecuPasswordFragment"
+        tools:layout="@layout/activity_recu_password" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.JoseJavierSanchezM.cestafamiliar.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+</navigation>
