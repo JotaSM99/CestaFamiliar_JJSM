@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">CestaFamiliar</string>
+    <string name="title_crear_cuenta">Crear cuenta</string>
+    <string name="title_iniciar_sesion">Iniciar sesión</string>
+    <string name="title_recuperar">Recuperar contraseña</string>
+    <string name="subtitle_splash">Tus compras del hogar, sincronizadas al instante.</string>
+    <string name="subtitle_recuperar">Introduce tu correo electrónico y te enviaremos las instrucciones de restablecimiento.</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="btn_acceder">Acceder</string>
+    <string name="btn_enviar_enlace">Enviar enlace</string>
+    <string name="btn_invitado">Entrar como invitado (modo local)</string>
+    <string name="link_olvidaste_pass">¿Olvidaste tu contraseña?</string>
+    <string name="error_credenciales">Correo o contraseña incorrectos</string>
 </resources>
