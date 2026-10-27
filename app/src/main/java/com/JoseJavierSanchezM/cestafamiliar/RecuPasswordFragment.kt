@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.JoseJavierSanchezM.cestafamiliar.databinding.ActivityRecuPasswordBinding
 
+// Pantalla para solicitar el envío del enlace de recuperación de contraseña
 class RecuPasswordFragment : Fragment(R.layout.activity_recu_password) {
 
     private var _binding: ActivityRecuPasswordBinding? = null
@@ -23,6 +24,7 @@ class RecuPasswordFragment : Fragment(R.layout.activity_recu_password) {
             } else {
                 binding.tilEmail.error = null
                 Toast.makeText(requireContext(), "Enlace enviado a $email", Toast.LENGTH_SHORT).show()
+                // Volvemos a la pantalla anterior
                 findNavController().navigateUp()
             }
         }

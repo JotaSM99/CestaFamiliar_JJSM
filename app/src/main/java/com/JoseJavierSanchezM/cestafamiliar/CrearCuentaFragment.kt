@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.JoseJavierSanchezM.cestafamiliar.databinding.ActivityCrearcuentaBinding
 
+// Pantalla para registrar una nueva cuenta de usuario
 class CrearCuentaFragment : Fragment(R.layout.activity_crearcuenta) {
 
     private var _binding: ActivityCrearcuentaBinding? = null
@@ -21,6 +22,8 @@ class CrearCuentaFragment : Fragment(R.layout.activity_crearcuenta) {
             val password = binding.etPassword.text?.toString()?.trim()
 
             var hasError = false
+
+            // Comprobamos que el nombre no esté vacío
             if (nombre.isNullOrEmpty()) {
                 binding.tilNombre.error = "Campo obligatorio"
                 hasError = true
@@ -28,6 +31,7 @@ class CrearCuentaFragment : Fragment(R.layout.activity_crearcuenta) {
                 binding.tilNombre.error = null
             }
 
+            // Comprobamos que el email no esté vacío
             if (email.isNullOrEmpty()) {
                 binding.tilEmail.error = "Campo obligatorio"
                 hasError = true
@@ -35,6 +39,7 @@ class CrearCuentaFragment : Fragment(R.layout.activity_crearcuenta) {
                 binding.tilEmail.error = null
             }
 
+            // Comprobamos que la contraseña no esté vacía
             if (password.isNullOrEmpty()) {
                 binding.tilPassword.error = "Campo obligatorio"
                 hasError = true
@@ -42,6 +47,7 @@ class CrearCuentaFragment : Fragment(R.layout.activity_crearcuenta) {
                 binding.tilPassword.error = null
             }
 
+            // Si todos los campos son válidos, pasamos a la pantalla principal
             if (!hasError) {
                 findNavController().navigate(R.id.action_crearCuentaFragment_to_homeFragment)
             }

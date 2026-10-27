@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.JoseJavierSanchezM.cestafamiliar.databinding.ActivityLoginErrorBinding
 
+// Pantalla de login que muestra el mensaje de error en las credenciales
 class LoginErrorFragment : Fragment(R.layout.activity_login_error) {
 
     private var _binding: ActivityLoginErrorBinding? = null
@@ -15,6 +16,7 @@ class LoginErrorFragment : Fragment(R.layout.activity_login_error) {
         super.onViewCreated(view, savedInstanceState)
         _binding = ActivityLoginErrorBinding.bind(view)
 
+        // Muestra el mensaje de error directamente en la caja de texto
         binding.tilEmail.error = getString(R.string.error_credenciales)
 
         binding.tvRecuperarContrasena.setOnClickListener {
