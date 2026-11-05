@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Redefinimos la función onSupportNavigateUp() para manejar la navegación hacia atrás
+    // onSupportNavigateUp() para manejar la navegación hacia atrás
     override fun onSupportNavigateUp(): Boolean {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
         val navController = navHostFragment?.navController
