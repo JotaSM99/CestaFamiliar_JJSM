@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.navigation.fragment.NavHostFragment
 import com.JoseJavierSanchezM.cestafamiliar.databinding.ActivityMainBinding
 
 // Actividad principal que sirve de contenedor para los fragmentos de la app
@@ -26,5 +27,12 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    // Redefinimos la función onSupportNavigateUp() para manejar la navegación hacia atrás
+    override fun onSupportNavigateUp(): Boolean {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
+        val navController = navHostFragment?.navController
+        return navController?.navigateUp() ?: super.onSupportNavigateUp()
     }
 }
