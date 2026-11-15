@@ -2,8 +2,8 @@ package com.JoseJavierSanchezM.cestafamiliar
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.JoseJavierSanchezM.cestafamiliar.adapter.ProductoAdapter
 import com.JoseJavierSanchezM.cestafamiliar.data.ProductoProvider
@@ -22,7 +22,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         // Inicializamos y configuramos el RecyclerView
         binding.rvProductos.layoutManager = LinearLayoutManager(requireContext())
         binding.rvProductos.adapter = ProductoAdapter(ProductoProvider.listaProductos) { producto ->
-            Toast.makeText(requireContext(), "Seleccionado: ${producto.nombre}", Toast.LENGTH_SHORT).show()
+            // Al hacer clic en un producto enviamos el objeto al DetalleProductoFragment
+            val bundle = Bundle().apply {
+                putSerializable("producto", producto)
+            }
+            findNavController().navigate(R.id.action_homeFragment_to_detalleProductoFragment, bundle)
         }
     }
 

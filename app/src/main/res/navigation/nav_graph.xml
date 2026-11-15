@@ -70,6 +70,16 @@
         android:id="@+id/homeFragment"
         android:name="com.JoseJavierSanchezM.cestafamiliar.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detalleProductoFragment"
+            app:destination="@id/detalleProductoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleProductoFragment"
+        android:name="com.JoseJavierSanchezM.cestafamiliar.DetalleProductoFragment"
+        android:label="DetalleProductoFragment"
+        tools:layout="@layout/fragment_detalle_producto" />
 
 </navigation>
