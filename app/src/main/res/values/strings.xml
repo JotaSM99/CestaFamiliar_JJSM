@@ -4,6 +4,7 @@
     <string name="title_iniciar_sesion">Iniciar sesión</string>
     <string name="title_recuperar">Recuperar contraseña</string>
     <string name="title_mi_cesta">Mi Cesta de la Compra</string>
+    <string name="title_detalle_producto">Detalle del Producto</string>
     <string name="subtitle_splash">Tus compras del hogar, sincronizadas al instante.</string>
     <string name="subtitle_recuperar">Introduce tu correo electrónico y te enviaremos las instrucciones de restablecimiento.</string>
     <string name="hint_nombre">Nombre</string>
