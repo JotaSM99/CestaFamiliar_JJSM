@@ -17,4 +17,6 @@
     <string name="label_descripcion">Descripción:</string>
     <string name="link_olvidaste_pass">¿Olvidaste tu contraseña?</string>
     <string name="error_credenciales">Correo o contraseña incorrectos</string>
+    <string name="menu_info">Acerca de</string>
+    <string name="menu_logout">Cerrar sesión</string>
 </resources>
