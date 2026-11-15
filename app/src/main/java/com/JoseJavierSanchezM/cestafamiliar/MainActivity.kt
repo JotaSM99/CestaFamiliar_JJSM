@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.JoseJavierSanchezM.cestafamiliar.databinding.ActivityMainBinding
 
 // Actividad principal que sirve de contenedor para los fragmentos de la app
@@ -21,6 +22,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Configurar la Toolbar como ActionBar para mostrar menús y soporte de navegación
+        setSupportActionBar(binding.toolbar)
+
+        // Vincular la Toolbar con el controlador de navegación
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
+        val navController = navHostFragment?.navController
+        navController?.let {
+            setupActionBarWithNavController(it)
+        }
+
         // Ajustamos los márgenes con la barra de estado del sistema
         ViewCompat.setOnApplyWindowInsetsListener(binding.layoutMain) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -29,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // onSupportNavigateUp() para manejar la navegación hacia atrás
+    // Redefinimos la función onSupportNavigateUp() para manejar la navegación hacia atrás
     override fun onSupportNavigateUp(): Boolean {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
         val navController = navHostFragment?.navController
