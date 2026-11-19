@@ -68,7 +68,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.JoseJavierSanchezM.cestafamiliar.HomeFragment"
+        android:name="com.JoseJavierSanchezM.cestafamiliar.ListFragment"
         android:label="@string/title_mi_cesta"
         tools:layout="@layout/fragment_home">
         <action

@@ -17,7 +17,7 @@ import com.JoseJavierSanchezM.cestafamiliar.data.ProductoProvider
 import com.JoseJavierSanchezM.cestafamiliar.databinding.FragmentHomeBinding
 
 // Pantalla principal que muestra la lista de productos y gestiona el menú de opciones
-class HomeFragment : Fragment(R.layout.fragment_home) {
+class ListFragment : Fragment(R.layout.fragment_home) {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
